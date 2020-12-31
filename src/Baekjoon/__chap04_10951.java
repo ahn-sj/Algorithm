@@ -16,6 +16,7 @@ public class __chap04_10951 {
 			System.out.println(a + b);
 			cnt++;
 		}
+		sc.close();
 	}
 
 }
