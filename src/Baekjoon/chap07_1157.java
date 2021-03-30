@@ -2,6 +2,7 @@ package Baekjoon;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class chap07_1157 {
@@ -30,17 +31,32 @@ public class chap07_1157 {
 			}
 		}
 		
-		Arrays.sort(count_arr);
+		int cnt = 0;
 		
-		System.out.println(count_arr.getClass().getName());
+//		System.out.println(overlap + " " + max + " " + index);
+		
+		for(int i = 0; i < count_arr.length; i++) {
+			if(max == count_arr[i])
+				cnt++;
+		}
+		
+		if(cnt >= 2) {
+			System.out.println("?");
+		}
+		else
+			System.out.println((char)('A' + index));
+		System.out.println(cnt);
+		
+//		Arrays.sort(count_arr);
+		
+//		System.out.println(count_arr.getClass().getName());
 //		if(count_arr[count_arr.length] == count_arr[(count_arr.length)-1])
 //			System.out.println("?");
 //		else
 //			System.out.println('A' + index);
 		
 		
-		
-		System.out.println(Arrays.toString(count_arr));
-		System.out.println(index);
+//		System.out.println(Arrays.toString(count_arr));
+//		System.out.println(index);
 	}
 }
