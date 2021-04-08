@@ -46,6 +46,7 @@ public class chap07_1157 {
 		else
 			System.out.println((char)('A' + index));
 		System.out.println(cnt);
+		// 중복되는 값이 있는지 확인
 		
 //		Arrays.sort(count_arr);
 		
